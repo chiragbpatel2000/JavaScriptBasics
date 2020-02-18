@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Function </title>
+    Calculator
+</head>
+<body>
+    <input id="val1"/>
+    <input id="val2"/>
+
+    <button id="addbtn">Add</button>
+    <button id="subbtn">Sub</button>
+    <button id="multibtn">Multi</button>
+    <p id="result"> </p>
+
+    <script>
+     
+     document.getElementById("addbtn").onclick =add2Number;
+     document.getElementById("subbtn").onclick =sub2Number;
+     document.getElementById("multibtn").onclick =multi2Number;
+        function add2Number(){
+           let a =  document.getElementById("val1").value;
+           let b =  document.getElementById("val2").value;
+           let res =parseInt(a)+ parseInt(b);
+           document.getElementById("result").innerHTML = res;
+            
+        }
+        function sub2Number(){
+           let a =  document.getElementById("val1").value;
+           let b =  document.getElementById("val2").value;
+           let res =parseInt(a) - parseInt(b);
+           document.getElementById("result").innerHTML = res;
+            
+        }
+        function multi2Number(){
+           let a =  document.getElementById("val1").value;
+           let b =  document.getElementById("val2").value;
+           let res =parseInt(a) * parseInt(b);
+           document.getElementById("result").innerHTML = res;
+            
+        }
+       
+
+    </script>
+</body>
+</html>
