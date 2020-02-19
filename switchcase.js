@@ -1,4 +1,4 @@
-
+// switchcase statement for checking condition
 let weekNo = 8;
 
 switch(weekNo)
